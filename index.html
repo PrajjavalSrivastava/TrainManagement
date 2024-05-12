@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Train Management System</title>
+    <style>
+        /* Your CSS styles go here */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Train Management System</h1>
+        <!-- Navigation menu if needed -->
+    </header>
+    <main>
+        <section id="search">
+            <h2>Search Train</h2>
+            <form id="searchForm">
+                <label for="trainName">Train Name:</label>
+                <input type="text" id="trainName" name="trainName" required>
+                <button type="submit">Search</button>
+            </form>
+            <div id="searchResults">
+                <!-- Search results will be displayed here -->
+            </div>
+        </section>
+        <section id="schedule">
+            <h2>Train Schedule</h2>
+            <table id="scheduleTable">
+                <thead>
+                    <tr>
+                        <th>Train Number</th>
+                        <th>Departure</th>
+                        <th>Arrival</th>
+                        <th>Departure Time</th>
+                        <th>Arrival Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Train schedule rows will be dynamically populated here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Train Management System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
